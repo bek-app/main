@@ -72,7 +72,8 @@ body {
 .content {
     .content-wrap {
         margin-top: 40px;
-        position: relative;
+        display: flex;
+        // position: relative;
         .content-blocks {
             display: flex;
             flex-wrap: wrap;
@@ -118,14 +119,16 @@ body {
             }
         }
         .sidebar {
-            position: absolute;
-            top: 0;
-            right: 0;
-            .sidebar-wrapper {
-                position: fixed;
-                transform: translateX(-100%);
+            max-width: 170px;
+            width: 100%;
+            height: 100%; // experiment with this value, try changing to 110vh
+            overflow: auto;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 5%;
+            .sidebar-inner {
                 .currency {
-                    width: 170px;
+                    width: 160px;
                     height: 169px;
                     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
                     border: 1px solid #ffffff;
@@ -142,7 +145,7 @@ body {
                     }
                 }
                 .credit {
-                    width: 170px;
+                    width: 160px;
                     height: 210px;
                     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
                     border: 1px solid #ffffff;
@@ -160,7 +163,7 @@ body {
                 .deposits {
                     display: flex;
                     align-items: flex-end;
-                    width: 170px;
+                    width: 160px;
                     height: 210px;
                     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
                     border: 1px solid #ffffff;
