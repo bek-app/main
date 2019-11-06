@@ -33,3 +33,21 @@
         }
     }
 }
+
+@media (max-width: 640px) {
+    .content {
+        .container {
+            .content-wrap {
+                .content-blocks {
+                    .content-block {
+                        margin-right: 15px;
+                        margin-left: 15px;
+                    }
+                }
+                .sidebar {
+                    display: none;
+                }
+            }
+        }
+    }
+}

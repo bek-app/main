@@ -12,14 +12,16 @@ body {
     max-width: 1176px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
 }
 
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-end;
     margin-top: 20px;
+    .logo {
+        margin-left: 15px;
+    }
     .nav-wrap {
         display: flex;
         flex-grow: 3;
@@ -27,6 +29,7 @@ body {
         justify-content: space-around;
         min-height: 100px;
         margin-left: 16px;
+        margin-right: 15px;
         .account {
             a {
                 text-decoration: none;
@@ -85,13 +88,15 @@ body {
     .content-wrap {
         margin-top: 40px;
         display: flex;
+        justify-content: center;
         margin-bottom: 5%;
         .content-blocks {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             .content-block {
-                width: 470px;
+                max-width: 470px;
+                width: 100%;
                 height: 370px;
                 box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
                 border: 1px solid #ffffff;
