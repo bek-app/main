@@ -12,11 +12,12 @@ body {
     max-width: 1176px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-end;
     margin-top: 20px;
     .nav-wrap {
@@ -36,6 +37,17 @@ body {
                 font-weight: 400;
                 line-height: 22px;
             }
+        }
+        .btn-menu {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            transform: translate(-100%);
+            -webkit-transform: translate(-100%);
+            -moz-transform: translate(-100%);
+            -ms-transform: translate(-100%);
+            -o-transform: translate(-100%);
         }
         .nav {
             display: flex;
@@ -73,10 +85,11 @@ body {
     .content-wrap {
         margin-top: 40px;
         display: flex;
-        // position: relative;
+        margin-bottom: 5%;
         .content-blocks {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
             .content-block {
                 width: 470px;
                 height: 370px;
@@ -88,9 +101,7 @@ body {
                 align-items: flex-start;
                 position: relative;
                 margin-bottom: 30px;
-                &:last-child {
-                    margin-right: 0;
-                }
+                &:last-child {}
                 img {
                     margin-left: 10px;
                     margin-top: -2px;
@@ -121,11 +132,12 @@ body {
         .sidebar {
             max-width: 170px;
             width: 100%;
-            height: 100%; // experiment with this value, try changing to 110vh
+            height: 100%;
             overflow: auto;
             position: -webkit-sticky;
             position: sticky;
             top: 5%;
+            right: 15px;
             .sidebar-inner {
                 .currency {
                     width: 160px;

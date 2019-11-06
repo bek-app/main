@@ -1,3 +1,12 @@
+$(function() {
+    $('.btn-menu').on('click', function() {
+        $('.nav').slideToggle();
+
+    });
+
+
+});
+
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
