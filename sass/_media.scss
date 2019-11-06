@@ -6,7 +6,7 @@
                 .nav-wrap {
                     .btn-menu {
                         display: block !important;
-                        color: #fff;
+                        color: #4d4d4d;
                         font-size: 30px;
                         margin-right: 15px;
                     }
@@ -14,14 +14,17 @@
                         display: none;
                         text-align: center;
                         position: absolute;
-                        right: 0;
-                        left: 0;
+                        right: 50px;
+                        left: 50px;
                         top: 120px;
                         text-align: center;
                         z-index: 50;
                         .nav-item {
                             &::after {
                                 display: none;
+                            }
+                            .dropdown-content-item {
+                                right: -180px;
                             }
                         }
                     }
