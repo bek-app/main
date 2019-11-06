@@ -270,6 +270,14 @@ body {
   margin-left: 30px;
 }
 
+.navbar .nav-wrap .nav .nav-item::after:last-child {
+  content: "none";
+}
+
+.navbar .nav-wrap .nav .nav-item:last-child::after {
+  content: none;
+}
+
 .navbar .nav-wrap .nav .nav-item .nav-link {
   display: inline-block;
   text-decoration: none;

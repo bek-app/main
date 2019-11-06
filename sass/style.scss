@@ -69,6 +69,14 @@ body {
                     bottom: 0;
                     top: 0;
                     margin-left: 30px;
+                    &:last-child {
+                        content: "none";
+                    }
+                }
+                &:last-child {
+                    &::after {
+                        content: none;
+                    }
                 }
                 .nav-link {
                     display: inline-block;
